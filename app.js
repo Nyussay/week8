@@ -45,7 +45,7 @@ export default (express, bodyParser, fs, crypto, http, mongodb, path, cors, pupp
             // res.setHeader('content-type', 'text/plain');
             // res.send("0.8862481722945399");
         })
-        .get('/wordpress/wp-json/wp/v2/posts/1', (req, res) => res.status(200).json({title: {id: 1, rendered: "itmo286137"}}))
+        .get('/wordpress/wp-json/wp/v2/posts/1', (req, res) => res.status(200).json({title: {id: 1, rendered: "itmo286138"}}))
         .post('/render/', (req, res) => {
             const {random2, random3} = req.body;
 
@@ -135,7 +135,7 @@ export default (express, bodyParser, fs, crypto, http, mongodb, path, cors, pupp
             });
         })
         .all('*', (req, res) => {
-            res.send('itmo286137');
+            res.send('itmo286138');
         });
 
 
